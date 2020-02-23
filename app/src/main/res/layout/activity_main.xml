@@ -10,11 +10,12 @@
         android:id="@+id/volte_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:text="Enable VoLTE"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mnc_txt" />
+        app:layout_constraintTop_toBottomOf="@+id/editable_chk" />
 
     <EditText
         android:id="@+id/apn_txt"
@@ -32,7 +33,7 @@
         android:id="@+id/mcc_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="71dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="432"
@@ -44,7 +45,7 @@
         android:id="@+id/mnc_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="67dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="67"
@@ -78,5 +79,48 @@
         android:text="@string/mnc"
         app:layout_constraintBottom_toTopOf="@+id/mnc_txt"
         app:layout_constraintStart_toStartOf="@+id/mnc_txt" />
+
+    <EditText
+        android:id="@+id/type_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ims"
+        app:layout_constraintEnd_toEndOf="@+id/mnc_txt"
+        app:layout_constraintTop_toBottomOf="@+id/mnc_txt" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="6dp"
+        android:text="Type"
+        app:layout_constraintBottom_toTopOf="@+id/type_txt"
+        app:layout_constraintStart_toStartOf="@+id/type_txt" />
+
+    <CheckBox
+        android:id="@+id/editable_chk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="User Editable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_txt" />
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volte_btn"
+        app:layout_constraintVertical_bias="0.3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
